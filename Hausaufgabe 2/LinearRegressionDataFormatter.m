@@ -1,7 +1,17 @@
 classdef LinearRegressionDataFormatter < matlab.mixin.SetGet
-    %DATAPRERPERATOR Class to model the training data for lineare
-    %regression model object
-   
+%% DATAPRERPERATOR Class to model the training data for lineare
+%regression model object
+%
+% Example: 
+% see: runScript.m
+% 
+% See also: LinearRegressionModel.m, GradientDescentOptimizer.m
+% Author: Jannik Wiessler, 7314712
+% email address: inf20112@lehre.dhbw-stuttgart.de, jannik.wiessler@daimler.com
+% April 2022; Last revision: 13.04.2022
+%%
+%------------- BEGIN CODE --------------
+
     properties (Access = public)
         feature
         featureName

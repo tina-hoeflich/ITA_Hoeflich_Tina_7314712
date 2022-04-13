@@ -1,7 +1,17 @@
 classdef GradientDescentOptimizer < matlab.mixin.SetGet
-    %GRADIENTDESCENTOPTIMIZER 
-    % Class to perform the training for a lineare regression Model
-      
+%%GRADIENTDESCENTOPTIMIZER 
+% Class to perform the training for a lineare regression Model
+%
+% Example: 
+% see: runScript.m
+% 
+% See also: LinearRegressionDataFormatter.m, LinearRegressionModel.m
+% Author: Jannik Wiessler, 7314712
+% email address: jannik.wiessler@daimler.com, inf20112@lehre.dhbw-stuttgart.de 
+% April 2022; Last revision: 13.04.2022  
+%%
+%------------- BEGIN CODE --------------
+
     properties (Access = private)
         costHistory
         learningRate

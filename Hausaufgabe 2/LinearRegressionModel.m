@@ -1,7 +1,17 @@
 classdef LinearRegressionModel < matlab.mixin.SetGet
-    %LINEARREGRESSIONMODEL 
-    % Class representing an implementation of linear regression model
-    
+%% LINEARREGRESSIONMODEL 
+% Class representing an implementation of linear regression model
+%
+% Example: 
+% see: runScript.m
+% 
+% See also: LinearRegressionDataFormatter.m, GradientDescentOptimizer.m
+% Author: Jannik Wiessler, 7314712
+% email address: jannik.wiessler@daimler.com, inf20112@lehre.dhbw-stuttgart.de 
+% April 2022; Last revision: 13.04.2022
+%%
+%------------- BEGIN CODE --------------
+
     properties (Access = public)
         optimizer
         trainingData
