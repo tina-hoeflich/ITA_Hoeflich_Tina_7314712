@@ -1,7 +1,12 @@
 %% runScript: 
-% runs the Automobilfederung model and visulaize the reults
+% runs the Automobilfederung model and visulaizes the reults
 %
-% Author: Jannik Wiessler
+% Example:  [ model.sim('t0', 0, 'tfinal', 3,'y0', [0 0 0 0], 'stepsize', 0.035);
+%
+% % Other m-files required: Automobilfederung.m 
+%
+% 
+% Author: Jannik Wiessler and Tina Höflich
 % DHBW Stuttgart
 % email: jannik.wiessler@daimler.com
 % data: Q2 2022
@@ -24,10 +29,8 @@ model = Automobilfederung('m1', 25,...
 stepsizeStart = 0.005;
 stepsizeEnd = 0.05;
 stepsizeDelta = 0.005;
-% for stepsize = stepsizeStart:stepsizeDelta:stepsizeEnd
     model.sim('t0', 0,...
         'tfinal', 3,...
         'y0', [0 0 0 0],...
         'stepsize', 0.035); % first stepsize in which the "Einfedervorgang" is not displayed anymore but the plot seen is still physcally plausible
     model.visualizeResults();
-% end
