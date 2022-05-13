@@ -2,7 +2,11 @@
 % stores the model of the Automobilfederung, simulates it 
 % as well as performing the visualization
 %
-% Author: Tina Höflich
+% Syntax:  sim(obj, varargin);
+% 
+% Example:  model.sim('t0', 0, 'tfinal', 3,'y0', [0 0 0 0], 'stepsize', 0.035);
+
+% Author: Jannik Wiessler and Tina Höflich
 % DHBW Stuttgart
 % email: inf20112@lehre.dhbw-stuttgart.de
 % data: Q2 2022
